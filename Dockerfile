@@ -1,6 +1,6 @@
 FROM python:3.7-stretch
 
-RUN apt-get update && apt-get install -y cron git nano && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y cron git nano jq && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --no-cache-dir pipenv
 
