@@ -1,7 +1,6 @@
 FROM python:3.7
 
 RUN apt-get update && apt-get install -y cron git nano jq && rm -rf /var/lib/apt/lists/*
-
 RUN pip3 install --no-cache-dir pipenv
 
 RUN mkdir -p /usr/src/app
