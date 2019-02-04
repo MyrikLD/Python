@@ -10,6 +10,6 @@ WORKDIR /usr/src/app
 ONBUILD COPY Pipfile /usr/src/app/
 ONBUILD COPY Pipfile.lock /usr/src/app/
 
-ONBUILD RUN set -ex && pipenv install --deploy --system
+ONBUILD RUN set -ex && pipenv install --deploy --system --clear
 
 ONBUILD COPY . /usr/src/app
